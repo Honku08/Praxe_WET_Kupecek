@@ -1,4 +1,4 @@
-    <div class="footer--top">
+    <footer class="footer--top">
         <div class="odkazy">
             <ul>
                 <li><a href="onas.php">O nás</a></li>
@@ -16,12 +16,16 @@
             <a href="#"><img src="images/fbICON.png" alt="" class="icon"></a>
             <a href="#"><img src="images/tiktokICON.png" alt="" class="icon"></a>
         </div>
-    </div>
 
-    <div class="footer--bottom">
-        <span>© 2025 ForHealth</span>
-    </div>
+        
+    </footer>
+
+    <footer class="footer--bottom">
+            <span>© 2025 ForHealth</span>
+    </footer>
+    
 
     <script src="js/searchPopup.js"></script>
+    <script src="js/hamburgerPopup.js"></script>
+    
 </body>
-</html>
