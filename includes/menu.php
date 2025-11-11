@@ -13,13 +13,13 @@
 
         <input id="search--input" class="search--input" type="text">
         <button id="search--button" class="search--button">
-            <img class="search--img icon" src="images/search.png">
+            <img class="search--img icon" src="images/lupa.png">
         </button>
 
             <span class="menu--rozdelovac rozdelovac--maly"></span>
 
         <nav class="menu__odkazy">
-            <a href="produkty.php">Produkty</a>
+            <a href="produkty.php" class="menu__odkazy--produkty--text">Produkty</a>
 
                 <span class="menu--rozdelovac rozdelovac--maly"></span>
 

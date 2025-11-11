@@ -23,7 +23,7 @@
         <div class="clen">
             <div class="clen--fotka hepy"></div>
             <h2>Tomáš Hepner</h2>
-            <p>Twink</p>
+            <p>Jednatel</p>
         </div>
 
         <div class="clen">

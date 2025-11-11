@@ -12,9 +12,9 @@
         </div>
 
         <div class="socialnisite">
-            <a href="#"><img src="images/instagramICON.png" alt="" class="icon"></a>
-            <a href="#"><img src="images/fbICON.png" alt="" class="icon"></a>
-            <a href="#"><img src="images/tiktokICON.png" alt="" class="icon"></a>
+            <a href="#"><img src="images/instagram.png" alt="" class="icon"></a>
+            <a href="#"><img src="images/facebook.png" alt="" class="icon"></a>
+            <a href="#"><img src="images/tiktok.png" alt="" class="icon"></a>
         </div>
 
         

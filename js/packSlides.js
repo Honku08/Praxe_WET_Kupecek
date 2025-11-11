@@ -20,7 +20,7 @@ tabs.forEach(tab => {
 
         title.classList.add('hidden');
 
-        image.style.backgroundColor = pack.color; 
+        image.style.background = pack.color; 
         
         setTimeout(() => {
             title.innerHTML = pack.title;

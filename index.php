@@ -22,18 +22,18 @@
     <section class="why--us">
         <h2>Proč si vybrat právě nás</h2>
         <div class="duvody">
-            <div class="duvod">
-                <img src="images/kvalitaICON.png" alt="Kvalita">
+            <div class="duvod duvod--jedna">
+                <img class="jedna--img" src="images/kvalitaICON.png" alt="Kvalita">
                 <h3>Špičková kvalita</h3>
                 <p>Každý produkt obsahuje jen ověřené látky od spolehlivých dodavatelů.</p>
             </div>
-            <div class="duvod">
-                <img src="images/přírodaICON.png" alt="Příroda">
+            <div class="duvod duvod--dva">
+                <img class="dva--img" src="images/přírodaICON.png" alt="Příroda">
                 <h3>Přírodní složení</h3>
                 <p>Podporujeme zdraví bez chemie a zbytečných přísad.</p>
             </div>
-            <div class="duvod">
-                <img src="images/jednoduchostICON.png" alt="Jednoduchost">
+            <div class="duvod duvod--tri">
+                <img class="tri--img" src="images/jednoduchostICON.png" alt="Jednoduchost">
                 <h3>Jednoduchost</h3>
                 <p>Nemusíš nic složitě vybírat – vyber si pack a máš hotovo.</p>
             </div>
