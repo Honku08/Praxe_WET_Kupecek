@@ -3,7 +3,7 @@ const filterOverlay = document.getElementById('filterOverlay');
 const closeFilter = document.getElementById('closeFilter');
 const applyFilter = document.getElementById('applyFilter');
 const productsGrid = document.getElementById('productsGrid');
-const checkboxes = document.querySelectorAll('.filter-options input[type="checkbox"]');
+const checkboxes = document.querySelectorAll('.filter--options input[type="checkbox"]');
 
 filterBtn.addEventListener('click', () => {
     filterOverlay.classList.add('active');
@@ -24,7 +24,7 @@ applyFilter.addEventListener('click', () => {
         .filter(cb => cb.checked)
         .map(cb => cb.value);
 
-    const products = productsGrid.querySelectorAll('.product-card');
+    const products = productsGrid.querySelectorAll('.product--card');
 
     products.forEach(product => {
         const type = product.getAttribute('data-type');

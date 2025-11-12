@@ -23,11 +23,11 @@
 
                 <span class="menu--rozdelovac rozdelovac--maly"></span>
 
-            <a href="#"><img src="images/user.png" class="user--img icon"></a>
+            <a href="#"><img src="images/user.png" class="user--icon icon"></a>
 
                 <span class="menu--rozdelovac rozdelovac--velky"></span>
 
-            <a href="kosik.php"><img src="images/cart.png" class="cart--img icon"></a>
+            <a href="kosik.php" class="cart-link"><img src="images/cart.png" class="cart--icon icon"><span id="cartCount">0</span></a>
 
             <span class="menu--rozdelovac rozdelovac--maly"></span>
         </nav>

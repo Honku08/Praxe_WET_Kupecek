@@ -38,39 +38,39 @@ $total = $subtotal + $doprava;
 
 ?>
 
-    <main class="cart-container">
-        <section class="cart-items">
-            <table class="cart-table">
+    <main class="cart--container">
+        <section class="cart--items">
+            <table class="cart--table">
                 <thead>
                     <tr>
-                        <th>Položka</th>
-                        <th>Popis</th>
-                        <th>Cena</th>
-                        <th>Množství</th>
-                        <th>Mezisoučet</th>
-                        <th></th>
+                        <th class="cart--product--th">Položka</th>
+                        <th class="cart--desc--th">Popis</th>
+                        <th class="cart--price--th">Cena</th>
+                        <th class="cart--qty--th">Množství</th>
+                        <th class="cart--subtotal--th">Mezisoučet</th>
+                        <th class="cart--deleteIcon--th"></th>
                     </tr>
                 </thead>
                 <tbody>
                     <?php if (!empty($_SESSION['cart'])): ?>
                         <?php foreach ($_SESSION['cart'] as $id => $item): ?>
                             <tr>
-                                <td><img src="<?= htmlspecialchars($item['image']) ?>" alt="Produkt" class="cart-img"></td>
-                                <td class="cart-desc">
+                                <td class="cart--product"><img src="<?= htmlspecialchars($item['image']) ?>" alt="Produkt" class="cart--img"></td>
+                                <td class="cart--desc">
                                     <strong><?= htmlspecialchars($item['name']) ?></strong>
                                 </td>
-                                <td class="cart-price"><?= number_format($item['price'], 2, ',', ' ') ?> Kč</td>
-                                <td class="cart-qty">
-                                    <form method="post" class="qty-form">
+                                <td class="cart--price"><?= number_format($item['price'], 2, ',', ' ') ?> Kč</td>
+                                <td class="cart--qty">
+                                    <form method="post" class="qty--form">
                                         <input type="hidden" name="product_id" value="<?= htmlspecialchars($id) ?>">
-                                        <button type="submit" name="change_qty" value="-1" class="qty-btn">−</button>
+                                        <button type="submit" name="change_qty" value="-1" class="qty--btn">−</button>
                                         <span><?= htmlspecialchars($item['quantity']) ?></span>
-                                        <button type="submit" name="change_qty" value="1" class="qty-btn">+</button>
+                                        <button type="submit" name="change_qty" value="1" class="qty--btn">+</button>
                                     </form>
                                 </td>
-                                <td class="cart-subtotal"><?= number_format($item['price'] * $item['quantity'], 2, ',', ' ') ?> Kč</td>
-                                <td>
-                                    <a href="kosik.php?remove=<?= urlencode($id) ?>" class="remove-item">🗑</a>
+                                <td class="cart--subtotal"><?= number_format($item['price'] * $item['quantity'], 2, ',', ' ') ?> Kč</td>
+                                <td class="cart--deleteIcon">
+                                    <a href="kosik.php?remove=<?= urlencode($id) ?>" class="remove--item">🗑</a>
                                 </td>
                             </tr>
                         <?php endforeach; ?>
@@ -81,19 +81,19 @@ $total = $subtotal + $doprava;
             </table>
         </section>
 
-        <aside class="cart-summary">
+        <aside class="cart--summary">
             <h3>Shrnutí objednávky</h3>
-            <div class="summary-row">
+            <div class="summary--row">
                 <p>Mezisoučet:</p><span><?= number_format($subtotal, 2, ',', ' ') ?> Kč</span>
             </div>
-            <div class="summary-row">
+            <div class="summary--row">
                 <p>Doručení:</p><span><?= number_format($doprava, 2, ',', ' ') ?> Kč</span>
             </div>
             <hr>
-            <div class="summary-total">
+            <div class="summary--total">
                 <p>K úhradě:</p><span><?= number_format($total, 2, ',', ' ') ?> Kč</span>
             </div>
-            <button class="checkout-btn">Přejít k pokladně</button>
+            <button class="checkout--btn">Přejít k pokladně</button>
         </aside>
     </main>
 
