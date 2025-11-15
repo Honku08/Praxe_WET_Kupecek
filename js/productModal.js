@@ -1,10 +1,10 @@
 document.addEventListener("DOMContentLoaded", () => {
     const productCards = document.querySelectorAll('.product--card');
     const modal = document.querySelector('.product-modal');
-    const modalImg = document.querySelector('.modal-img');
     const modalTitle = document.querySelector('.modal-title');
     const modalPrice = document.querySelector('.modal-price');
     const modalDesc = document.querySelector('.modal-desc');
+    const modalInfo = document.querySelector('.modal-info');
     const closeBtn = document.querySelector('.close');
 
     productCards.forEach(card => {
@@ -13,10 +13,10 @@ document.addEventListener("DOMContentLoaded", () => {
             if(e.target.tagName.toLowerCase() === 'button') return;
 
             e.preventDefault();
-            modalImg.src = card.dataset.img;
             modalTitle.textContent = card.dataset.name;
             modalPrice.textContent = card.dataset.price;
             modalDesc.textContent = card.dataset.desc;
+            modalInfo.textContent = card.dataset.info;
             modal.style.display = 'flex';
         });
 

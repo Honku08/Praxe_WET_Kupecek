@@ -2,8 +2,6 @@
 
 <?php
 
-session_start();
-
 if (isset($_POST['change_qty'])) {
     $id = $_POST['product_id'];
     $change = $_POST['change_qty'];

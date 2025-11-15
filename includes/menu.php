@@ -8,13 +8,20 @@
 </head>
 <body>
 
+    <?php
+    if (session_status() === PHP_SESSION_NONE) {
+        session_start();
+    }
+
+    $cart_count = 0;
+    if (!empty($_SESSION['cart']) && is_array($_SESSION['cart'])) {
+        $quantities = array_column($_SESSION['cart'], 'quantity');
+        $cart_count = is_array($quantities) ? array_sum($quantities) : 0;
+    }
+    ?>
+
     <header class="menu">
         <a class="menu--logo" href="index.php"><img src="images/ForHealth_logo.png" alt="ForHealth logo" class="FHlogo"></a>
-
-        <input id="search--input" class="search--input" type="text">
-        <button id="search--button" class="search--button">
-            <img class="search--img icon" src="images/lupa.png">
-        </button>
 
             <span class="menu--rozdelovac rozdelovac--maly"></span>
 
@@ -27,7 +34,12 @@
 
                 <span class="menu--rozdelovac rozdelovac--velky"></span>
 
-            <a href="kosik.php" class="cart-link"><img src="images/cart.png" class="cart--icon icon"><span id="cartCount">0</span></a>
+            <a href="kosik.php" class="cart-link">
+                <img src="images/cart.png" class="cart--icon icon">
+                <span id="cartCount" class="<?php echo ($cart_count > 0) ? '' : 'hidden'; ?>">
+                    <?php echo $cart_count; ?>
+                </span>
+            </a>
 
             <span class="menu--rozdelovac rozdelovac--maly"></span>
         </nav>

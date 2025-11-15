@@ -1,7 +1,8 @@
-<a href="" class="product--card" data-type="detox"
+<div class="product--card" data-type="detox"
     data-name="Liver Cleanse Complex" 
     data-price="10 Kč" 
-    data-desc="Liver Cleanse Complex obsahuje ostropestřec mariánský, artyčok a kurkumu, které přispívají k detoxikaci organismu a zdravé funkci jater. Pomáhá po náročném období nebo při únavě způsobené toxiny.">
+    data-desc="Liver Cleanse Complex obsahuje ostropestřec mariánský, artyčok a kurkumu, které přispívají k detoxikaci organismu a zdravé funkci jater. Pomáhá po náročném období nebo při únavě způsobené toxiny."
+    data-info="V balení je 80 denních dávek">
     <img src="images/products/LiverCleanseComplex-nobg.png" alt="Liver Cleanse Complex">
     <div class="product--content">    
         <h3>Liver Cleanse Complex</h3>
@@ -16,12 +17,13 @@
         <input type="hidden" name="product_filter" value="detox">
         <button type="submit" name="add_to_cart">Přidat do košíku</button>
     </form>
-</a>
+</div>
 
-<a href="" class="product--card" data-type="detox"
+<div class="product--card" data-type="detox"
     data-name="Detox Tea Balance" 
     data-price="10 Kč" 
-    data-desc="Detox Tea Balance je směs máty, kopřivy, pampelišky a zázvoru. Podporuje trávení, zlepšuje metabolismus a pomáhá tělu zbavit se zadržovaných škodlivin. Skvělý start pro zdravější životní styl.">
+    data-desc="Detox Tea Balance je směs máty, kopřivy, pampelišky a zázvoru. Podporuje trávení, zlepšuje metabolismus a pomáhá tělu zbavit se zadržovaných škodlivin. Skvělý start pro zdravější životní styl."
+    data-info="V balení je 80 denních dávek">
     <img src="images/products/DetoxTeaBalance-nobg.png" alt="Detox Tea Balance">
     <div class="product--content">    
         <h3>Detox Tea Balance</h3>
@@ -36,12 +38,13 @@
         <input type="hidden" name="product_filter" value="detox">
         <button type="submit" name="add_to_cart">Přidat do košíku</button>
     </form>
-</a>
+</div>
 
-<a href="" class="product--card" data-type="detox"
+<div class="product--card" data-type="detox"
     data-name="Pure Body Reset" 
     data-price="10 Kč" 
-    data-desc="Pure Body Reset kombinuje antioxidanty, vitaminy a rostlinné extrakty v přesně vyváženém poměru. Ideální po období stresu, špatného stravování nebo vyčerpání. Pomáhá obnovit rovnováhu a vitalitu.">
+    data-desc="Pure Body Reset kombinuje antioxidanty, vitaminy a rostlinné extrakty v přesně vyváženém poměru. Ideální po období stresu, špatného stravování nebo vyčerpání. Pomáhá obnovit rovnováhu a vitalitu."
+    data-info="V balení je 80 denních dávek">
     <img src="images/products/PureBodyReset-nobg.png" alt="Pure Body Reset">
     <div class="product--content">    
         <h3>Pure Body Reset</h3>
@@ -56,4 +59,4 @@
         <input type="hidden" name="product_filter" value="detox">
         <button type="submit" name="add_to_cart">Přidat do košíku</button>
     </form>
-</a>
+</div>

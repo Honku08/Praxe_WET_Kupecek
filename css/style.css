@@ -530,13 +530,16 @@ a {
 /* PACK TITLE A KOUPIT BTN */
 
 
-.starter--pack {
+#starter--pack {
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 60px;
     padding: 60px 5% 60px 15%;
-    background-color: #223d50ff;
+    background-image: url(../images/background-blue.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     transition: 0.3s ease;
     box-shadow: 10px -120px 81px 1px #161a21 inset;
     color: #fff;
@@ -1208,7 +1211,9 @@ tbody tr {
         min-width: 150px;
     }
 
-    .cart--price--th {}
+    .cart--price--th {
+
+    }
 }
 
 @media only screen and (max-width: 769px) {

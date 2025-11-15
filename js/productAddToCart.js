@@ -1,34 +1,36 @@
-document.querySelectorAll('.add-to-cart').forEach(button => {
-    button.addEventListener('click', function(e) {
-        e.preventDefault(); // 🔥 zruší klasické odeslání
+document.addEventListener("DOMContentLoaded", () => {
+    const forms = document.querySelectorAll('.product--card form');
 
-        const product_id = this.dataset.id;
-        const product_name = this.dataset.name;
-        const product_price = this.dataset.price;
-        const product_image = this.dataset.image;
+    forms.forEach(form => {
+        let submitting = false; // zabrání dvojímu odeslání
 
-        fetch('addToCart.php', {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-            body: `product_id=${product_id}&product_name=${product_name}&product_price=${product_price}&product_image=${product_image}`
-        })
-        .then(res => res.json())
-        .then(data => {
-            if (data.status === 'success') {
-                const cartCount = document.getElementById('cartCount');
-                cartCount.textContent = data.cartCount;
+        form.addEventListener('submit', function (e) {
+            e.preventDefault();
+            if (submitting) return; 
+            submitting = true;
 
-                if (data.cartCount > 0) {
-                    cartCount.style.display = 'inline-block';
+            const formData = new FormData(form);
+
+            fetch("addToCart.php", {
+                method: "POST",
+                body: formData
+            })
+            .then(res => res.json())
+            .then(data => {
+                if (data.status === "success") {
+                    const badge = document.getElementById("cartCount");
+                    if (badge) {
+                        badge.textContent = data.cart_count;
+                        badge.classList.toggle("hidden", data.cart_count === 0);
+                    } else {
+                        console.warn("Element #cartCount nenalezen");
+                    }
                 } else {
-                    cartCount.style.display = 'none';
+                    console.error("Chyba při přidávání do košíku:", data.message);
                 }
-
-                // animace
-                cartCount.classList.add('bump');
-                setTimeout(() => cartCount.classList.remove('bump'), 300);
-            }
-        })
-        .catch(err => console.error(err));
+            })
+            .catch(err => console.error("Fetch chyba:", err))
+            .finally(() => submitting = false);
+        });
     });
 });

@@ -17,15 +17,13 @@
             <a href="#"><img src="images/tiktok.png" alt="" class="icon"></a>
         </div>
 
-        
     </footer>
 
     <footer class="footer--bottom">
-            <span>© 2025 ForHealth</span>
+        <span>© 2025 ForHealth</span>
     </footer>
     
-
-    <script src="js/searchPopup.js"></script>
     <script src="js/hamburgerPopup.js"></script>
-    
+    <script src="js/productAddToCart.js"></script>
 </body>
+</html>

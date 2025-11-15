@@ -48,5 +48,6 @@
     
     
     <script src="js/packSlides.js"></script>
+    <script src="js/productAddToCart.js"></script>
     
 <?php include "includes/footer.php" ?>

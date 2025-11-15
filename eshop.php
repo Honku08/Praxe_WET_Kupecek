@@ -2,8 +2,6 @@
     
 <?php
 
-session_start();
-
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $product = [
         'id' => $_POST['product_id'],
@@ -49,6 +47,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
                 <h2 class="modal-title"></h2>
                 <p class="modal-price"></p>
                 <p class="modal-desc"></p>
+                <p class="modal-info"></p>
             </div>
         </div>
     </section>
@@ -75,5 +74,4 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     
     <script src="js/filter.js"></script>
     <script src="js/productModal.js"></script>
-    <script src="js/productAddToCart.js"></script>
 <?php include "includes/footer.php" ?>
