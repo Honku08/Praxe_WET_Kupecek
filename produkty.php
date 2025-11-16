@@ -45,6 +45,48 @@
         <a href="eshop.php" class="eshop--odkaz">Zobrazit všechny produkty</a>
     </section>
 
+    <section class="special">
+        <div class="special--left">
+            <img src="images/testneco.jpg" alt="Produkt">
+        </div>
+
+        <div class="special--right">
+            <h2 class="special--title">Zdraví z přírody</h2>
+            <p class="special--text">
+                Naše speciální směs vitamínů a minerálů podporuje imunitu i energii během dne.
+            </p>
+
+            <div class="special--hexes">
+            <div class="hex">B12</div>
+            <div class="hex">C</div>
+            <div class="hex">Zinek</div>
+            </div>
+        </div>
+
+        <a href="eshop.php" class="eshop--odkaz">Zobrazit všechny produkty</a>
+    </section>
+
+    <section class="special">
+        <div class="special--left">
+            <img src="images/testneco.jpg" alt="Produkt">
+        </div>
+
+        <div class="special--right">
+            <h2 class="special--title">Zdraví z přírody</h2>
+            <p class="special--text">
+                Naše speciální směs vitamínů a minerálů podporuje imunitu i energii během dne.
+            </p>
+
+            <div class="special--hexes">
+            <div class="hex">B12</div>
+            <div class="hex">C</div>
+            <div class="hex">Zinek</div>
+            </div>
+        </div>
+
+        <a href="eshop.php" class="eshop--odkaz">Zobrazit všechny produkty</a>
+    </section>
+
     
     
     <script src="js/packSlides.js"></script>

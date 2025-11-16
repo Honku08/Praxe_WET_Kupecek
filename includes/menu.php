@@ -26,13 +26,14 @@
             <span class="menu--rozdelovac rozdelovac--maly"></span>
 
         <nav class="menu__odkazy">
+
             <a href="produkty.php" class="menu__odkazy--produkty--text">Produkty</a>
 
                 <span class="menu--rozdelovac rozdelovac--maly"></span>
 
-            <a href="#"><img src="images/user.png" class="user--icon icon"></a>
+            <a href="kontakt.php" class="menu__odkazy--kontakt--text">Kontakt</a>
 
-                <span class="menu--rozdelovac rozdelovac--velky"></span>
+                <span class="menu--rozdelovac rozdelovac--maly"></span>
 
             <a href="kosik.php" class="cart-link">
                 <img src="images/cart.png" class="cart--icon icon">
@@ -49,6 +50,8 @@
             
                 <a href="index.php">Domů</a>
                 <a href="onas.php">O nás</a>
+                <a href="produkty.php">Produkty</a>
+                <a href="kontakt.php">Kontakt</a>
                 <a href="kosik.php">Košík</a>
             </nav>
     </header>
