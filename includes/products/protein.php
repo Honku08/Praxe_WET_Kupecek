@@ -1,4 +1,4 @@
-<div class="product--card" data-type="protein"
+<div class="product--card product" data-type="protein"
     data-name="Whey Pro Classic" 
     data-price="10 Kč" 
     data-desc="Whey Pro Classic obsahuje 80 % čistého syrovátkového proteinu, který napomáhá růstu a regeneraci svalové hmoty po tréninku. Rychlá vstřebatelnost a nízký obsah cukru dělají z tohoto proteinu ideální volbu pro každého sportovce."
@@ -19,7 +19,7 @@
     </form>
 </div>
 
-<div class="product--card" data-type="protein"
+<div class="product--card product" data-type="protein"
     data-name="Vegan Plant Power" 
     data-price="10 Kč" 
     data-desc="Vegan Plant Power je přírodní rostlinný protein pro vegany i lidi s intolerancí na laktózu. Kombinace hrachového a rýžového proteinu zajišťuje plný profil aminokyselin a příjemnou chuť bez umělých přísad."
@@ -40,7 +40,7 @@
     </form>
 </div>
 
-<div class="product--card" data-type="protein"
+<div class="product--card product" data-type="protein"
     data-name="Night Recovery Protein" 
     data-price="10 Kč" 
     data-desc="Night Recovery Protein obsahuje micelární kasein, který se tráví pomalu a zajišťuje přísun aminokyselin po celou noc. Podporuje regeneraci svalů a zabraňuje katabolismu během spánku."

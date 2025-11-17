@@ -1,4 +1,4 @@
-<div class="product--card" data-type="detox"
+<div class="product--card product" data-type="detox"
     data-name="Liver Cleanse Complex" 
     data-price="10 Kč" 
     data-desc="Liver Cleanse Complex obsahuje ostropestřec mariánský, artyčok a kurkumu, které přispívají k detoxikaci organismu a zdravé funkci jater. Pomáhá po náročném období nebo při únavě způsobené toxiny."
@@ -19,7 +19,7 @@
     </form>
 </div>
 
-<div class="product--card" data-type="detox"
+<div class="product--card product" data-type="detox"
     data-name="Detox Tea Balance" 
     data-price="10 Kč" 
     data-desc="Detox Tea Balance je směs máty, kopřivy, pampelišky a zázvoru. Podporuje trávení, zlepšuje metabolismus a pomáhá tělu zbavit se zadržovaných škodlivin. Skvělý start pro zdravější životní styl."
@@ -40,7 +40,7 @@
     </form>
 </div>
 
-<div class="product--card" data-type="detox"
+<div class="product--card product" data-type="detox"
     data-name="Pure Body Reset" 
     data-price="10 Kč" 
     data-desc="Pure Body Reset kombinuje antioxidanty, vitaminy a rostlinné extrakty v přesně vyváženém poměru. Ideální po období stresu, špatného stravování nebo vyčerpání. Pomáhá obnovit rovnováhu a vitalitu."

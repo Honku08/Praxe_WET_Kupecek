@@ -1,4 +1,4 @@
-<div class="product--card" data-type="sirup"
+<div class="product--card product" data-type="sirup"
     data-name="Immuno Syrup" 
     data-price="10 Kč" 
     data-desc="Immuno Syrup kombinuje echinaceu, med a vitamín C. Je vhodný při oslabení organismu nebo v období chřipek a nachlazení. Má příjemnou chuť a lze ho užívat samostatně nebo s vodou či čajem."
@@ -19,7 +19,7 @@
     </form>
 </div>
 
-<div class="product--card" data-type="sirup"
+<div class="product--card product" data-type="sirup"
     data-name="Energy Shot Syrup" 
     data-price="10 Kč" 
     data-desc="Energy Shot Syrup poskytuje okamžitý náboj energie díky výtažku z guarany, ženšenu a přírodního kofeinu. Ideální před tréninkem nebo při únavě. Bez umělých sladidel, s přírodní ovocnou příchutí."
@@ -40,7 +40,7 @@
     </form>
 </div>
 
-<div class="product--card" data-type="sirup"
+<div class="product--card product" data-type="sirup"
     data-name="Sleep Relax Syrup" 
     data-price="10 Kč" 
     data-desc="Sleep Relax Syrup obsahuje extrakt z meduňky, kozlíku a levandule. Pomáhá navodit pocit klidu, uvolnit napětí a zlepšit kvalitu spánku. Bez návykových látek, vhodný pro každodenní užívání."

@@ -1,4 +1,4 @@
-<div class="product--card" data-type="vitamin"
+<div class="product--card product" data-type="vitamin"
     data-name="Vitamín C" 
     data-price="10 Kč" 
     data-desc="Vitamin C je klíčový antioxidant, který posiluje imunitní systém, zlepšuje vstřebávání železa a přispívá ke správné funkci  metabolismu. Pomáhá tělu bojovat proti únavě, chrání buňky před oxidačním stresem a podporuje tvorbu kolagenu pro zdravou pokožku, chrupavky i cévy.
@@ -20,7 +20,7 @@
     </form>
 </div>
 
-<div class="product--card" data-type="vitamin"
+<div class="product--card product" data-type="vitamin"
     data-name="Multivitamin Active Daily" 
     data-price="10 Kč" 
     data-desc="Multivitamin Active Daily doplňuje základní vitamíny a minerály potřebné pro správnou funkci metabolismu. Ideální pro každodenní podporu energie, imunity a vitality. Obsahuje vitaminy A, B, C, D a E ve vyváženém poměru."
@@ -41,7 +41,7 @@
     </form>
 </div>
 
-<div class="product--card" data-type="vitamin"
+<div class="product--card product" data-type="vitamin"
     data-name="Vitamin D3 Forte" 
     data-price="10 Kč" 
     data-desc="Vitamin D3 Forte podporuje vstřebávání vápníku a fosforu, čímž přispívá ke zdraví kostí a svalů. Pomáhá i správné funkci imunitního systému, zejména v zimních měsících, kdy je méně slunečního záření."

@@ -1,4 +1,4 @@
-<div class="product--card" data-type="energy"
+<div class="product--card product" data-type="energy"
     data-name="Energy Boost Complex" 
     data-price="10 Kč" 
     data-desc="Energy Boost Complex kombinuje kofein, guaranu a vitaminy skupiny B pro maximální podporu výkonu i mentálního soustředění. Ideální před tréninkem, při studiu nebo během náročného dne. Díky postupnému uvolňování energie nedochází k prudkému poklesu jako u běžných energetických nápojů."
@@ -19,7 +19,7 @@
     </form>
 </div>
 
-<div class="product--card" data-type="energy"
+<div class="product--card product" data-type="energy"
     data-name="Natural Power Shot" 
     data-price="10 Kč" 
     data-desc="Natural Power Shot je tekutý doplněk stravy s přírodními stimulanty, které povzbudí tělo i mysl. Obsahuje yerba maté, ženšen a extrakt ze zeleného čaje pro přirozený přísun energie bez cukru. Skvělá volba pro ty, kteří hledají zdravější alternativu ke klasickým energy drinkům."
@@ -40,7 +40,7 @@
     </form>
 </div>
 
-<div class="product--card" data-type="energy"
+<div class="product--card product" data-type="energy"
     data-name="Focus & Drive Capsules" 
     data-price="10 Kč" 
     data-desc="Focus & Drive Capsules podporují mentální výkon, bdělost a odolnost proti stresu. Kombinace L-theaninu, taurinu a kofeinu zlepšuje soustředění bez nervozity či podráždění. Vhodné při studiu, řízení nebo dlouhých pracovních směnách."

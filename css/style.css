@@ -29,7 +29,7 @@ body {
     width: 100%;
     height: 10vh;
     border-bottom: 1px solid rgba(255, 255, 255, 0.219);
-    background: rgba(0, 0, 0, 0.645);
+    background: rgba(0, 0, 0, 0.475);
     backdrop-filter: blur(15px);
     display: flex;
     justify-content: flex-end;
@@ -167,7 +167,6 @@ a {
 
 .hero {
     height: 100vh;
-    background: url('images/hero-bg.jpg') center/cover no-repeat;
     position: relative;
     display: flex;
     align-items: center;
@@ -180,13 +179,23 @@ a {
     content: "";
     position: absolute;
     inset: 0;
-    background: rgb(48, 48, 48);
+    background-image: url(../images/svg/leaf-gray.svg);
+    background-repeat: repeat;
+    background-color: #162018;
+    background-size: 200px;
+    box-shadow: 0px -70px 15px -40px #141618 inset;
 }
 
 .hero--content {
     position: relative;
     z-index: 2;
     top: -2%;
+    padding: 50px;
+    background: rgba(47, 47, 47, 0.11);
+    border-radius: 50px;
+    box-shadow: 0 4px 30px rgba(77, 77, 77, 0.305), inset 0 4px 30px rgba(54, 54, 54, 0.1);
+    backdrop-filter: blur(5.2px);
+    -webkit-backdrop-filter: blur(5.2px);
 }
 
 .hero h1 {
@@ -413,16 +422,23 @@ a {
 
 
 .contact-form {
-    max-width: 600px;
+    max-width: 100%;
     margin: 0 auto;
+    display: flex;
+    justify-content: center;
     padding: 60px 20px;
     padding-top: 13vh;
-    height: 85vh;
+    min-height: 85vh;
     color: #fff;
-    border-radius: 12px;
+    background-image: url(../images/svg/plus-gray.svg);
+    background-repeat: repeat;
+    background-color: #162018;
+    background-size: 50px;
 }
 
 .contact--container{
+    height: fit-content;
+    width: 40%;
     background: #1a1a1a;
     padding: 30px;
     border-radius: 12px;
@@ -480,10 +496,11 @@ a {
 
 
 .onas--firma {
-    margin-bottom: 60px;
     text-align: center;
-    margin: 30px 0 20px 0;
-    padding-top: 10vh;
+    padding-top: 15vh;
+    padding-bottom: 40px;
+    background-color: #0f1510;
+    box-shadow: 0px -3.5px 0px 0px #525252 inset;
 }
 
 .onas--firma h1 {
@@ -499,16 +516,20 @@ a {
     font-size: 2.4rem;
     font-weight: 500;
     color: #3aac51;
-    margin: 10px 0;
+    margin-top: 10px;
     font-family: "Bebas Neue", sans-serif;
 }
 
 .onas {
     text-align: center;
-    padding: 30px 0px;
+    padding: 60px 0px 30px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-image: url(../images/svg/autumn-gray.svg);
+    background-repeat: repeat;
+    background-color: #162018;
+    background-size: 150px;
 }
 
 .onas--uvod {
@@ -518,6 +539,15 @@ a {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+}
+
+.onas--uvod--text--wrap{
+    background: rgba(43, 43, 43, 0.245);
+    border-radius: 50px;
+    box-shadow: 0 4px 30px rgba(57, 57, 57, 0.515), inset 0 4px 30px rgba(40, 40, 40, 0.137);
+    backdrop-filter: blur(5.2px);
+    -webkit-backdrop-filter: blur(5.2px);
+    padding: 30px;
 }
 
 .onas--uvod h1 {
@@ -549,10 +579,13 @@ a {
 .clen {
     background-color: #f5f5f5;
     padding: 20px;
-    border-radius: 12px;
+    border-radius: 28px;
     width: 250px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    color: black;
+    color: rgb(255, 255, 255);
+    background: rgba(43, 43, 43, 0.245);
+    box-shadow: 0 4px 30px rgba(58, 58, 58, 0.47), inset 0 4px 30px rgba(85, 85, 85, 0.322);
+    backdrop-filter: blur(5.2px);
+    -webkit-backdrop-filter: blur(5.2px);
 }
 
 .clen--fotka {
@@ -748,23 +781,30 @@ a {
 
 
 .special {
-    height: 60vh;
+    min-height: 60vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 80px;
-    padding: 80px 15%;
+    gap: 150px;
+    padding: 200px 15% 80px 15%;
     background: #0c110c;
+    flex-direction: column;
 }
 
-.special--left {
+.special--wrapper{
+    width: 80%;
+    display: flex;
+    gap: 80px;
+}
+
+.special--wrapper .special--left {
     flex: 1;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.special--left img {
+.special--wrapper .special--left img {
     width: 350px;
     max-width: 100%;
     border-radius: 20px;
@@ -772,12 +812,22 @@ a {
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
 }
 
-.special--right {
+.special--wrapper .special--right {
     flex: 1;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    justify-content: space-between;
     gap: 25px;
+}
+
+.list--wrapper {
+  opacity: 1;
+  transition: opacity 0.3s;
+}
+
+.list--wrapper.hidden {
+  opacity: 0;
 }
 
 .special--title {
@@ -821,9 +871,15 @@ a {
 .eshop--odkaz {
     position: absolute;
     left: 50%;
-
-    bottom: -58%;
     transform: translate(-50%, -50%);
+    top: 110%;
+    padding: 10px 20px;
+    background: lightgreen;
+    border-radius: 20px;
+}
+
+.special--wrapper.special--dva{
+    flex-direction: row-reverse;
 }
 
 
@@ -833,9 +889,9 @@ a {
 .products {
     padding: 80px 8%;
     padding-top: 15vh;
-    background-image: url(../images/topography-darkgray.svg);
+    background-image: url(../images/svg/topography-gray.svg);
     background-repeat: repeat;
-    background-color: #202922;
+    background-color: #142217;
 }
 
 .products--header {
@@ -875,10 +931,13 @@ a {
 .product--card {
     min-height: 450px;
     width: 350px;
-    background: #0000001c;
-    backdrop-filter: blur(1px);
-    border-radius: 12px;
-    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+
+    background: #0000002c;
+    backdrop-filter: blur(4px);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.13);
+
     padding: 20px;
     padding-top: 40px;
     text-align: center;
@@ -899,8 +958,8 @@ a {
 
 .product--card:hover {
     transform: translateY(-5px);
-    backdrop-filter: blur(3px);
-    background: #0000002c;
+    backdrop-filter: blur(5px);
+    background: #00000002;
 }
 
 .product--card:hover img{
@@ -1225,11 +1284,23 @@ tbody tr {
 
 
 .footer {
+    
+}
+
+.footer--top{
     width: 100%;
     height: 15vh;
     background: rgb(40, 40, 40);
     display: flex;
     padding: 0 25%;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0px 45px 10px -35px rgba(0, 0, 0, 0.382) inset;
+}
+
+.footer--bottom{
+    background: rgb(40, 40, 40);
+    text-align: center;
+    padding: 10px;
 }
 
 .odkazy {

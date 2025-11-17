@@ -30,7 +30,7 @@ applyFilter.addEventListener('click', () => {
         const type = product.getAttribute('data-type');
     
     if (selectedFilters.length === 0 || selectedFilters.includes(type)) {
-        product.style.display = 'block';
+        product.style.display = 'flex';
     } else {
         product.style.display = 'none';
     }

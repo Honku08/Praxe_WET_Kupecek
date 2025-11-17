@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-    const forms = document.querySelectorAll('.product--card form');
+    const forms = document.querySelectorAll('.product form');
 
     forms.forEach(form => {
         let submitting = false; // zabrání dvojímu odeslání

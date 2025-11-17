@@ -16,6 +16,15 @@ $name = $_POST['product_name'] ?? '';
 $price = $_POST['product_price'] ?? '';
 $image = $_POST['product_image'] ?? '';
 
+// převod ceny na číslo
+$price = floatval($price);
+
+// kontrola, zda je cena platné číslo
+if (!is_numeric($price)) {
+    echo json_encode(['status' => 'error', 'message' => 'Neplatná cena produktu']);
+    exit;
+}
+
 // inicializace košíku, pokud neexistuje
 if (!isset($_SESSION['cart']) || !is_array($_SESSION['cart'])) {
     $_SESSION['cart'] = [];
@@ -38,7 +47,7 @@ if (!$found) {
     $_SESSION['cart'][] = [
         'id' => $id,
         'name' => $name,
-        'price' => $price,
+        'price' => (float)$price, // ← tady převod na číslo
         'image' => $image,
         'quantity' => 1
     ];
