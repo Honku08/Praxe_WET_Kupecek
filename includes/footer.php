@@ -9,7 +9,7 @@
             </div>
 
             <div class="kontakty">
-                <h2>Kontakty</h2>
+                <a href="kontakt.php">Kontakty</a>
                 <span class="kontakt--email">email: forhealth@contact.cz</span>
             </div>
 

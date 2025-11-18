@@ -8,11 +8,11 @@
 
     <main class="onas">
         <section class="onas--uvod">
-            <div class="onas__fotka--tymu"></div>
             <div class="onas--uvod--text--wrap">
                 <h1>Náš tým</h1>
                 <p>Jsme parta nadšenců, kteří dělají svou práci s vášní a nasazením.</p>
             </div>
+            <div class="onas__fotka--tymu"><img src="images/clenove/fotkatymu.jpg" alt=""></div>
         </section>
 
         <section class="onas--clenove">
@@ -49,13 +49,13 @@
             <div class="clen">
                 <div class="clen--fotka shelby"></div>
                 <h2>David Halačka</h2>
-                <p>je TUFF</p>
+                <p>Sigma</p>
             </div>
 
             <div class="clen">
                 <div class="clen--fotka krystyna"></div>
-                <h2>Krystýna Pechová</h2>
-                <p>uz vubec nevim</p>
+                <h2>Aštar Šeran</h2>
+                <p>(Krystýna Pechová - nemam fotku, takže je v týmu Aštar)</p>
             </div>
         </section>
     </main>

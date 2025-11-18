@@ -2,13 +2,13 @@
 
     <section class="hero">
         <div class="hero--content">
-            <h1><span>F</span>or<span>H</span>ealth</h1>
+            <h1>For<span>Health</span></h1>
             <p class="slogan"><span>SÍLA</span> v každém balení, <span>ZDRAVÍ</span> v každé kapsli</p>
             <a href="#about" class="hero--btn">A kdo vůbec jsme?</a>
         </div>
     </section>
 
-    <section class="about--company" id="about" style= "scroll-margin-top: 3vh;">
+    <section class="about--company" id="about" style= "scroll-margin-top: 6vh;">
         <h2>Kdo jsme</h2>
         <p>
             Jsme malá česká firma zaměřená na podporu zdravého životního stylu.

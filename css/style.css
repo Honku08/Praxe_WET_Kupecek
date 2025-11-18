@@ -12,8 +12,10 @@
     box-sizing: border-box;
 }
 
-html {
+html, body {
     scroll-behavior: smooth;
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
 body {
@@ -45,6 +47,16 @@ body {
     gap: 19px;
     display: flex;
     align-items: center;
+}
+
+.menu__odkazy a{
+    color: rgb(164, 164, 164);
+    transition: color, scale 0.5s ease;
+}
+
+.menu__odkazy a:hover{
+    color: white;
+    scale: 1.07;
 }
 
 .hamburgerBtn {
@@ -128,16 +140,7 @@ body {
 .menu--rozdelovac {
     width: 1px;
     background: rgba(255, 255, 255, 0.3);
-    position: relative;
-    top: -2px;
-}
-
-.rozdelovac--maly {
     height: 30px;
-}
-
-.rozdelovac--velky {
-    height: 50px;
 }
 
 a {
@@ -206,7 +209,7 @@ a {
 }
 
 .hero h1 span {
-    color: #3e9750;
+    color: #39b051;
 }
 
 .slogan {
@@ -221,7 +224,7 @@ a {
 }
 
 .hero--btn {
-    background: #38672c;
+    background: #2c5123;
     color: #fff;
     padding: 12px 30px;
     border-radius: 30px;
@@ -232,8 +235,8 @@ a {
 }
 
 .hero--btn:hover {
-    background: #569749;
-    transform: scale(1.05);
+    background: #437639;
+    padding: 15px 35px;
 }
 
 
@@ -271,7 +274,7 @@ a {
     background: #0f1112;
     color: #f5f5f5;
     text-align: center;
-    padding: 80px 20px;
+    padding: 50px 20px;
     min-height: 50vh;
 }
 
@@ -499,7 +502,7 @@ a {
     text-align: center;
     padding-top: 15vh;
     padding-bottom: 40px;
-    background-color: #0f1510;
+    background-color: #162018;
     box-shadow: 0px -3.5px 0px 0px #525252 inset;
 }
 
@@ -522,7 +525,7 @@ a {
 
 .onas {
     text-align: center;
-    padding: 60px 0px 30px;
+    padding: 40px 0px 30px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -548,6 +551,7 @@ a {
     backdrop-filter: blur(5.2px);
     -webkit-backdrop-filter: blur(5.2px);
     padding: 30px;
+    margin-bottom: 30px;
 }
 
 .onas--uvod h1 {
@@ -561,11 +565,19 @@ a {
 }
 
 .onas__fotka--tymu {
-    width: 80%;
-    height: 500px;
-    background-color: #ccc;
-    border-radius: 10px;
-    margin-bottom: 60px;
+    width: fit-content;
+    min-height: 500px;
+    padding: 10px;
+    background: rgba(43, 43, 43, 0.245);
+    border-radius: 50px;
+    box-shadow: 0 4px 30px rgba(57, 57, 57, 0.515), inset 0 4px 30px rgba(40, 40, 40, 0.137);
+    backdrop-filter: blur(5.2px);
+    -webkit-backdrop-filter: blur(5.2px);
+}
+
+.onas__fotka--tymu img{
+    border-radius: 40px;
+    height: 60vh;
 }
 
 .onas--clenove {
@@ -578,7 +590,7 @@ a {
 
 .clen {
     background-color: #f5f5f5;
-    padding: 20px;
+    padding: 15px;
     border-radius: 28px;
     width: 250px;
     color: rgb(255, 255, 255);
@@ -624,7 +636,7 @@ a {
 }
 
 .krystyna {
-    background-image: url(../images/clenove/);
+    background-image: url(../images/clenove/nemamobrazekkrystyny.jpg);
 }
 
 
@@ -1097,26 +1109,39 @@ a {
     gap: 40px;
     flex-wrap: wrap;
     min-height: 85vh;
+    background-image: url(../images/svg/hexagon-gray.svg);
+    background-repeat: repeat;
+    background-color: #162018;
+    background-size: 40px;
 }
 
 .cart--items {
     flex: 1;
-    min-width: 600px;
+    min-width: 300px;
+}
+
+.table--wrapper {
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
 }
 
 .cart--table {
     width: 100%;
+    min-width: 750px;
     border-collapse: collapse;
+    white-space: nowrap;
 }
 
 tbody tr {
-    height: 90px;
+    height: auto;
+    min-height: 90px;
+    background: #0000009a;
 }
 
 .cart--table th {
     background: #000;
     color: #fff;
-
     padding: 12px;
     font-weight: 600;
 }
@@ -1131,57 +1156,53 @@ tbody tr {
 }
 
 .cart--product {
-    width: 10%;
+    min-width: 80px;
+    width: 80px;
 }
 
 .cart--img {
-    width: 50%;
+    width: 70px;
     height: auto;
+    display: block;
 }
 
 .cart--desc {
+    min-width: 250px;
     max-width: 350px;
-    width: 50%;
 }
 
 .cart--price,
-.cart--subtotal {
-    color: #e63900;
-    font-weight: 600;
-    width: 10%;
-}
-
+.cart--subtotal,
 .cart--qty {
+    min-width: 100px;
     text-align: center;
-    width: 10%;
 }
 
 .cart--deleteIcon {
+    min-width: 60px;
     text-align: right;
 }
 
 .cart--product--th {
     text-align: left;
-    width: 50px;
+    min-width: 80px;
 }
 
 .cart--desc--th {
     text-align: left;
+    min-width: 250px;
 }
 
-.cart--price--th {
+.cart--price--th,
+.cart--subtotal--th {
     text-align: left;
+    min-width: 100px;
 }
 
 .cart--qty--th {
     text-align: center;
+    min-width: 100px;
 }
-
-.cart--subtotal--th {
-    text-align: left;
-}
-
-.cart--deleteIcon--th {}
 
 .cart--qty input {
     width: 50px;
@@ -1191,14 +1212,30 @@ tbody tr {
     padding: 4px;
 }
 
+.qty--form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    height: 100%;
+}
+
 .qty--btn {
-    background: none;
-    border: 1px solid #000;
+    border: 1px solid #ccc;
+    background: white;
     width: 28px;
     height: 28px;
-    cursor: pointer;
     font-size: 18px;
-    line-height: 1;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.2s;
+    line-height: 0;
+}
+
+.qty--btn:hover {
+    background: #f2f2f2;
 }
 
 .remove--item {
@@ -1209,7 +1246,7 @@ tbody tr {
 }
 
 .cart--summary {
-    width: 320px;
+    min-width: 300px;
     background: #000;
     color: #fff;
     padding: 20px 24px;
@@ -1253,38 +1290,18 @@ tbody tr {
     background: #aaf25b;
 }
 
-.qty--form {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 6px;
-    height: 100%;
-}
-
-.qty--btn {
-    border: 1px solid #ccc;
-    background: white;
-    width: 28px;
-    height: 28px;
-    font-size: 18px;
-    cursor: pointer;
-    line-height: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: 0.2s;
-}
-
-.qty--btn:hover {
-    background: #f2f2f2;
-}
-
 
 /* FOOTER */
 
 
-.footer {
-    
+.footer a{
+    text-decoration: underline;
+    color: gray;
+    transition: color 0.5s ease;
+}
+
+.footer a:hover{
+    color: white;
 }
 
 .footer--top{
@@ -1326,6 +1343,10 @@ tbody tr {
     padding: 0 20px;
 }
 
+.kontakty a{
+    font-size: 1.5rem;
+}
+
 .socialnisite {
     width: 25%;
     border-left: 1px solid rgba(255, 255, 255, 0.3);
@@ -1363,7 +1384,11 @@ tbody tr {
         flex-direction: column;
         align-items: flex-start;
         gap: 0;
-        padding: 60px 8%;
+        padding: 60px 15%;
+    }
+
+    #starter--pack{
+        padding-top: 15vh;
     }
 
     .tab {
@@ -1372,6 +1397,41 @@ tbody tr {
 
     .cart--price--th {
 
+    }
+
+    .footer--top{
+        padding: 0 20%;
+    }
+}
+
+@media only screen and (max-width: 1250px) {
+    .cart--container {
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: flex-end;
+        gap: 24px;
+        padding-top: 15vh;
+    }
+
+    .cart--items {
+        width: 100%;
+        min-width: 0;
+    }
+
+    .table--wrapper {
+        width: 100%;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .cart--table {
+        width: 100%;
+        min-width: 600px;
+        white-space: nowrap;
+    }
+
+    .footer--top{
+        padding: 0 15%;
     }
 }
 
@@ -1393,10 +1453,70 @@ tbody tr {
         display: block;
     }
 
+    .footer--top{
+        padding: 0 0%;
+    }
+
+    .contact--container{
+        width: 80%;
+    }
+
+    .pack--tabs{
+        flex-direction: column;
+    }
+
+    .pack--tabs .tab{
+        width: 100%;
+        padding-top: 20px;
+    }
+
 }
 
 @media only screen and (max-width: 730px) {
     .hero h1 {
         font-size: 2rem;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    .table--wrapper {
+        overflow-x: auto;
+    }
+
+    .cart--table {
+        min-width: 750px;
+    }
+
+    .cart--img {
+        width: 60px;
+    }
+
+    .cart--desc {
+        min-width: 200px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .footer--top{
+        flex-direction: column;
+        height: auto;
+        min-height: fit-content;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        padding: 15px 0;
+    }
+
+    .odkazy, .socialnisite{
+        border: none;
+        padding: 15px;
+    }
+
+    .odkazy{
+        border-bottom: 1px solid gray;
+    }
+
+    .socialnisite{
+        border-top: 1px solid gray;
     }
 }

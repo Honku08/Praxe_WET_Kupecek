@@ -23,17 +23,21 @@
     <header class="menu">
         <a class="menu--logo" href="index.php"><img src="images/ForHealth_logo.png" alt="ForHealth logo" class="FHlogo"></a>
 
-            <span class="menu--rozdelovac rozdelovac--maly"></span>
+            <span class="menu--rozdelovac"></span>
 
         <nav class="menu__odkazy">
 
+            <a href="onas.php" class="menu__odkazy--produkty--text">O nás</a>
+
+                <span class="menu--rozdelovac"></span>
+
             <a href="produkty.php" class="menu__odkazy--produkty--text">Produkty</a>
 
-                <span class="menu--rozdelovac rozdelovac--maly"></span>
+                <span class="menu--rozdelovac"></span>
 
             <a href="kontakt.php" class="menu__odkazy--kontakt--text">Kontakt</a>
 
-                <span class="menu--rozdelovac rozdelovac--maly"></span>
+                <span class="menu--rozdelovac"></span>
 
             <a href="kosik.php" class="cart-link">
                 <img src="images/cart.png" class="cart--icon icon">
@@ -42,7 +46,7 @@
                 </span>
             </a>
 
-            <span class="menu--rozdelovac rozdelovac--maly"></span>
+            <span class="menu--rozdelovac"></span>
         </nav>
 
         <button class="hamburgerBtn" id="hamburgerBtn">☰</button>
