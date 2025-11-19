@@ -8,7 +8,7 @@
         </div>
     </section>
 
-    <section class="about--company" id="about" style= "scroll-margin-top: 6vh;">
+    <section class="about--company" id="about" style= "scroll-margin-top: 10vh;">
         <h2>Kdo jsme</h2>
         <p>
             Jsme malá česká firma zaměřená na podporu zdravého životního stylu.

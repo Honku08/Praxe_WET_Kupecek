@@ -4,7 +4,6 @@
                 <ul>
                     <li><a href="index.php">Domů</a></li>
                     <li><a href="onas.php">O nás</a></li>
-                    <li><a href="">Kde nás najdete</a></li>
                 </ul>
             </div>
 

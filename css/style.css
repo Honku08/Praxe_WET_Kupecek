@@ -248,7 +248,7 @@ a {
     color: #f5f5f5;
     text-align: center;
     padding: 80px 20px;
-    min-height: 37vh;
+    min-height: 40vh;
 }
 
 .about--company h2 {
@@ -358,18 +358,6 @@ a {
     transition: transform 0.6s ease;
 }
 
-.slide.one {
-    background: rgb(127, 212, 105);
-}
-
-.slide.two {
-    background: rgb(115, 176, 220);
-}
-
-.slide.three {
-    background: rgb(202, 98, 98);
-}
-
 .slide {
     flex: 0 0 100%;
     display: flex;
@@ -420,6 +408,35 @@ a {
     right: 20px;
 }
 
+.slide{
+    display: flex;
+    flex-direction: row;
+    gap: 150px;
+}
+
+.slide.one{
+    background: #cc8356;
+    background: radial-gradient(circle,rgba(204, 131, 86, 1) 0%, rgba(181, 104, 56, 1) 44%, rgba(145, 77, 35, 1) 66%, rgba(179, 105, 59, 1) 100%);
+}
+
+.slide.two{
+    background: #a4e675;
+    background: radial-gradient(circle,rgba(164, 230, 117, 1) 0%, rgba(121, 199, 80, 1) 28%, rgba(102, 176, 56, 1) 70%, rgba(170, 227, 109, 1) 100%);
+}
+
+.slide.three{
+    background: #73ebeb;
+    background: radial-gradient(circle,rgba(115, 235, 235, 1) 0%, rgba(71, 181, 181, 1) 33%, rgba(65, 150, 150, 1) 66%, rgba(97, 201, 201, 1) 100%);
+}
+
+.slide--product--info{
+    width: 600px;
+    text-align: justify;
+}
+
+.slide img{
+    width: 160px;
+}
 
 /* KONTAKT */
 
@@ -566,7 +583,7 @@ a {
 
 .onas__fotka--tymu {
     width: fit-content;
-    min-height: 500px;
+    min-height: fit-content;
     padding: 10px;
     background: rgba(43, 43, 43, 0.245);
     border-radius: 50px;
@@ -577,7 +594,9 @@ a {
 
 .onas__fotka--tymu img{
     border-radius: 40px;
-    height: 60vh;
+    width: 100%;
+    max-width: fit-content;
+    max-height: 60vh;
 }
 
 .onas--clenove {
@@ -724,7 +743,7 @@ a {
     display: flex;
     justify-content: center;
     align-items: flex-end;
-
+    position: relative;
 }
 
 .pack--tabs {
@@ -788,6 +807,39 @@ a {
     color: #fff;
 }
 
+.pack--img {
+    position: absolute;
+    opacity: 1;
+    transition: opacity 0.4s ease;
+    width: auto;
+    height: 300px;
+    filter: drop-shadow(0px 15px 10px #bfbfbf);
+}
+
+.pack--img.hidden {
+    opacity: 0;
+}
+
+.pack--img.jedna{
+    position: absolute;
+    top: 5%;
+    right: 14%;
+    rotate: 12deg;
+}
+
+.pack--img.dva{
+    position: absolute;
+    top: 0;
+    right: 44%;
+}
+
+.pack--img.tri{
+    position: absolute;
+    top: 5%;
+    right: 74%;
+    rotate: -12deg;
+}
+
 
 /* SPECIALITY */
 
@@ -797,16 +849,17 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 150px;
+    gap: 80px;
     padding: 200px 15% 80px 15%;
     background: #0c110c;
     flex-direction: column;
 }
 
 .special--wrapper{
-    width: 80%;
+    width: 90%;
     display: flex;
-    gap: 80px;
+    gap: 0px;
+    flex-wrap: wrap;
 }
 
 .special--wrapper .special--left {
@@ -817,7 +870,7 @@ a {
 }
 
 .special--wrapper .special--left img {
-    width: 350px;
+    width: 150px;
     max-width: 100%;
     border-radius: 20px;
     object-fit: cover;
@@ -865,7 +918,7 @@ a {
     height: 100px;
     aspect-ratio: cos(30deg);
     clip-path: polygon(-50% 50%, 50% 100%, 150% 50%, 50% 0);
-    background: #6fb974;
+    background: #538540;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -886,13 +939,20 @@ a {
     transform: translate(-50%, -50%);
     top: 110%;
     padding: 10px 20px;
-    background: lightgreen;
-    border-radius: 20px;
+    background: #538540;
+    border-radius: 8px;
+    transition: scale 0.1s ease;
+}
+
+.eshop--odkaz:hover{
+    background: #2ea000;
+    scale: 1.04;
 }
 
 .special--wrapper.special--dva{
     flex-direction: row-reverse;
 }
+
 
 
 /* VŠECHNY PRODUKTY - ESHOP */
@@ -920,17 +980,20 @@ a {
 }
 
 #filterBtn {
-    background: #3B8686;
+    background: #538540;
     color: #fff;
     border: none;
     padding: 10px 22px;
     border-radius: 8px;
     cursor: pointer;
     transition: 0.3s;
+    font-size: 1rem;
+    transition: scale 0.5 ease;
 }
 
 #filterBtn:hover {
-    background: #2f6d6d;
+    background: #2ea000;
+    scale: 1.1;
 }
 
 .products--grid {
@@ -986,31 +1049,61 @@ a {
     gap: 1px;
 }
 
+.add-to-cart-form button{
+    background: #538540;
+    color: #fff;
+    border: none;
+    padding: 10px 22px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.add-to-cart-form button:hover{
+    background: #2ea000;
+    scale: 1.1;
+}
 
 /* MODAL */
 
-
 .product-modal {
-    display: none;
     position: fixed;
     inset: 0;
     background: rgba(0, 0, 0, 0.7);
+
+    display: flex;
     justify-content: center;
     align-items: center;
     z-index: 999;
+
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: opacity 0.2s ease, visibility 0.2s ease;
+    
+}
+
+.product-modal.active {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
 }
 
 .product-modal-content {
     width: 100%;
-    height: 60vh;
-    background: #0b0707;
+    height: 30vh;
+    background-color: #0f1811;
     padding: 30px;
     border-radius: 15px;
     max-width: 500px;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
     animation: pop 0.3s ease;
     position: relative;
+    box-shadow: inset 0px 0px 22px 5px rgba(0, 0, 0, 0.458);
 }
 
 @keyframes pop {
@@ -1045,24 +1138,32 @@ a {
 .filter--overlay {
     position: fixed;
     inset: 0;
-    background: rgb(125, 125, 125);
-    display: none;
+    background: rgba(0, 0, 0, 0.45);
+    backdrop-filter: blur(2px);
+    
+    display: flex;
     justify-content: center;
     align-items: center;
+    
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
     z-index: 1000;
 }
 
 .filter--overlay.active {
-    display: flex;
+    opacity: 1;
+    visibility: visible;
 }
 
 .filter--content {
-    background: #11161b;
+    background-color: #101b0c;
     padding: 40px;
     border-radius: 15px;
     position: relative;
     width: 400px;
     text-align: left;
+    box-shadow: inset 0px 0px 22px 5px rgba(0, 0, 0, 0.458);
 }
 
 .close--filter {
@@ -1076,6 +1177,10 @@ a {
     cursor: pointer;
 }
 
+.close--filter:hover{
+    color: cyan;
+}
+
 .filter--options {
     display: flex;
     flex-direction: column;
@@ -1083,8 +1188,8 @@ a {
     margin: 25px 0;
 }
 
-.apply-filter {
-    background: #3B8686;
+.apply--filter {
+    background: #538540;
     color: #fff;
     border: none;
     padding: 10px 22px;
@@ -1094,7 +1199,50 @@ a {
 }
 
 .apply--filter:hover {
-    background: #2f6d6d;
+    background: #2ea000;
+    scale: 1.1;
+}
+
+.filter--options label{
+    display: flex;
+    gap: 20px;
+}
+
+.checkbox--filter {
+    width: 25px;
+    height: 25px;
+    appearance: none;
+    -webkit-appearance: none;
+    background-color: #fff;
+    border: 2px solid #aaa;
+    border-radius: 4px;
+    cursor: pointer;
+    position: relative;
+    transition: 0.2s;
+}
+
+/* při hover */
+.checkbox--filter:hover {
+    border-color: #538540;
+}
+
+/* když je zaškrtnuto */
+.checkbox--filter:checked {
+    background-color: #538540;
+    border-color: #538540;
+}
+
+/* přidání fajfky uvnitř */
+.checkbox--filter:checked::after {
+    content: '';
+    position: absolute;
+    top: 3px;
+    left: 8px;
+    width: 6px;
+    height: 12px;
+    border: solid #fff;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
 }
 
 
@@ -1156,13 +1304,15 @@ tbody tr {
 }
 
 .cart--product {
-    min-width: 80px;
-    width: 80px;
+    width: 40px;
+    height: 80px;
+    background-color: #091d0e;
+    box-shadow: inset 0px 0px 22px 5px rgba(0, 0, 0, 0.458);
 }
 
 .cart--img {
-    width: 70px;
-    height: auto;
+    width: auto;
+    height: 80px;
     display: block;
 }
 
@@ -1402,6 +1552,21 @@ tbody tr {
     .footer--top{
         padding: 0 20%;
     }
+
+    .pack--img.jedna{
+        top: -140%;
+        right: 14%;
+    }
+
+    .pack--img.dva{
+        top: -135%;
+        right: 34%;
+    }
+
+    .pack--img.tri{
+        top: -140%;
+        right: 54%;
+    }
 }
 
 @media only screen and (max-width: 1250px) {
@@ -1432,6 +1597,10 @@ tbody tr {
 
     .footer--top{
         padding: 0 15%;
+    }
+
+    .pack--img{
+        height: 250px;
     }
 }
 
@@ -1470,6 +1639,10 @@ tbody tr {
         padding-top: 20px;
     }
 
+    .pack--img{
+        height: 170px;
+    }
+
 }
 
 @media only screen and (max-width: 730px) {
@@ -1494,6 +1667,11 @@ tbody tr {
     .cart--desc {
         min-width: 200px;
     }
+
+    .pack--img{
+        height: 140px;
+    }
+
 }
 
 @media only screen and (max-width: 500px) {
@@ -1519,4 +1697,30 @@ tbody tr {
     .socialnisite{
         border-top: 1px solid gray;
     }
+
+    .firma--logo{
+        width: 80%;
+    }
+
+    #pack--title{
+        font-size: 3rem;
+    }
+    
+    .pack--img.jedna{
+        top: -90%;
+    }
+
+    .pack--img.dva{
+        top: -95%;
+    }
+
+    .pack--img.tri{
+        top: -90%;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .pack--img{
+        opacity: 0;
+    }  
 }

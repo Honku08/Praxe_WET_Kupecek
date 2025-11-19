@@ -9,9 +9,9 @@
             </h1>
             <ul class="starter--pack--list">
                 <div class="list--wrapper">
-                    <li>účinek blablabla</li>
-                    <li>vitamín ABC</li>
-                    <li>energie na celý den</li>
+                    <li>Vitamín C</li>
+                    <li>Vitamín D</li>
+                    <li>Multivitamín</li>
                 </div>
             </ul>
             <form class="add-to-cart-form" method="post">
@@ -25,6 +25,9 @@
         </div>
 
         <div class="starter--pack--right">
+            <img class="pack--img jedna" src="images/products/vitaminC-nobg.png" alt="">
+            <img class="pack--img dva" src="images/products/VitaminD3Forte-nobg.png" alt="">
+            <img class="pack--img tri" src="images/products/MultivitaminActiveDaily-nobg.png" alt="">
             <div class="pack--tabs">
                 <button class="tab active" data-pack="1"><span>1</span> Imunita je důležitá</button>
                 <button class="tab" data-pack="2"><span>2</span> Letní osvěžení</button>
@@ -36,57 +39,38 @@
     <section class="special">
         <div class="special--wrapper special--jedna">
             <div class="special--left">
-                <img src="images/testneco.jpg" alt="Produkt">
+                <img src="images/products/EnergyBoostComplex-nobg.png" alt="Produkt">
             </div>
 
             <div class="special--right">
-                <h2 class="special--title">Zdraví z přírody</h2>
+                <h2 class="special--title">Energy Boost Complex</h2>
                 <p class="special--text">
-                    Naše speciální směs vitamínů a minerálů podporuje imunitu i energii během dne.
+                    Energy Boost Complex kombinuje kofein, guaranu a vitaminy skupiny B pro maximální podporu výkonu i mentálního soustředění. Ideální před tréninkem, při studiu nebo během náročného dne. Díky postupnému uvolňování energie nedochází k prudkému poklesu jako u běžných energetických nápojů.
                 </p>
 
                 <div class="special--hexes">
-                <div class="hex">B12</div>
-                <div class="hex">C</div>
-                <div class="hex">Zinek</div>
+                <div class="hex">Max výkon</div>
+                <div class="hex">Bez poklesu</div>
+                <div class="hex">Kofein + B</div>
                 </div>
             </div>
         </div>
         
         <div class="special--wrapper special--dva">
             <div class="special--left">
-                <img src="images/testneco.jpg" alt="Produkt">
+                <img src="images/products/EnergyShotSyrup-nobg.png" alt="Produkt">
             </div>
 
             <div class="special--right">
-                <h2 class="special--title">Zdraví z přírody</h2>
+                <h2 class="special--title">Energy Shot Syrup</h2>
                 <p class="special--text">
-                    Naše speciální směs vitamínů a minerálů podporuje imunitu i energii během dne.
+                    Energy Shot Syrup poskytuje okamžitý náboj energie díky výtažku z guarany, ženšenu a přírodního kofeinu. Ideální před tréninkem nebo při únavě. Bez umělých sladidel, s přírodní ovocnou příchutí.
                 </p>
 
                 <div class="special--hexes">
-                <div class="hex">B12</div>
-                <div class="hex">C</div>
-                <div class="hex">Zinek</div>
-                </div>
-            </div>
-        </div>
-        
-        <div class="special--wrapper special--tri">
-            <div class="special--left">
-                <img src="images/testneco.jpg" alt="Produkt">
-            </div>
-
-            <div class="special--right">
-                <h2 class="special--title">Zdraví z přírody</h2>
-                <p class="special--text">
-                    Naše speciální směs vitamínů a minerálů podporuje imunitu i energii během dne.
-                </p>
-
-                <div class="special--hexes">
-                <div class="hex">B12</div>
-                <div class="hex">C</div>
-                <div class="hex">Zinek</div>
+                <div class="hex">Max výkon</div>
+                <div class="hex">Bez poklesu</div>
+                <div class="hex">Kofein + B</div>
                 </div>
             </div>
         </div>

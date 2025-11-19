@@ -23,27 +23,27 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
 ?>
     <section class="products">
-
+        <div class="cart--toast">
+            <p>Produkt byl přidán do košíku</p>
+        </div>
 
         <div class="products--header">
             <h2>Naše produkty</h2>
-            <button id="filterBtn">Filtr</button>
+            <button id="filterBtn">FILTR</button>
         </div>
 
         <div class="products--grid" id="productsGrid">
 
-            
-            <?php include "includes/products/vitaminy.php" ?>
             <?php include "includes/products/detox.php" ?>
+            <?php include "includes/products/vitaminy.php" ?>
             <?php include "includes/products/energy.php" ?>
             <?php include "includes/products/protein.php" ?>
             <?php include "includes/products/sirup.php" ?>
 
         </div>
-        <div class="product-modal">
+        <div class="product-modal" id="productModal">
             <div class="product-modal-content">
                 <span class="close">&times;</span>
-                <img src="" alt="" class="modal-img">
                 <h2 class="modal-title"></h2>
                 <p class="modal-price"></p>
                 <p class="modal-desc"></p>
@@ -60,11 +60,11 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
             <button class="close--filter" id="closeFilter">&times;</button>
 
             <div class="filter--options">
-                <label><input type="checkbox" value="energy"> Energy</label>
-                <label><input type="checkbox" value="vitamin"> Vitamín</label>
-                <label><input type="checkbox" value="protein"> Proteiny</label>
-                <label><input type="checkbox" value="detox"> Detox</label>
-                <label><input type="checkbox" value="sirup"> Sirupy</label>
+                <label><input class="checkbox--filter" type="checkbox" value="energy"> Energy</label>
+                <label><input class="checkbox--filter" type="checkbox" value="vitamin"> Vitamín</label>
+                <label><input class="checkbox--filter" type="checkbox" value="protein"> Proteiny</label>
+                <label><input class="checkbox--filter" type="checkbox" value="detox"> Detox</label>
+                <label><input class="checkbox--filter" type="checkbox" value="sirup"> Sirupy</label>
             </div>
 
             <button class="apply--filter" id="applyFilter">Použít filtr</button>

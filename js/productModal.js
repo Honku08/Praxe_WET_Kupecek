@@ -1,6 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
     const productCards = document.querySelectorAll('.product--card');
     const modal = document.querySelector('.product-modal');
+    const modalContent = document.querySelector('.product-modal-content');
     const modalTitle = document.querySelector('.modal-title');
     const modalPrice = document.querySelector('.modal-price');
     const modalDesc = document.querySelector('.modal-desc');
@@ -9,29 +10,30 @@ document.addEventListener("DOMContentLoaded", () => {
 
     productCards.forEach(card => {
         card.addEventListener('click', e => {
-            // ignoruj kliknutí, pokud klik je na button
             if(e.target.tagName.toLowerCase() === 'button') return;
-
             e.preventDefault();
             modalTitle.textContent = card.dataset.name;
             modalPrice.textContent = card.dataset.price;
             modalDesc.textContent = card.dataset.desc;
             modalInfo.textContent = card.dataset.info;
-            modal.style.display = 'flex';
+            modal.classList.add('active');
         });
 
-        // zastavení šíření události kliknutí na button
         const button = card.querySelector('button');
         if(button){
             button.addEventListener('click', e => {
-                e.stopPropagation(); // <--- klíčové
-                // zde můžeš přidat kód pro přidání do košíku
+                e.stopPropagation();
             });
         }
     });
 
-    closeBtn.addEventListener('click', () => modal.style.display = 'none');
+    closeBtn.addEventListener('click', () => {
+        modal.classList.remove('active');
+    });
+
     modal.addEventListener('click', e => {
-        if (e.target === modal) modal.style.display = 'none';
+        if (e.target === modal) {
+            modal.classList.remove('active');
+        }
     });
 });
